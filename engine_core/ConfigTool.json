@@ -1,0 +1,96 @@
+{
+    "BANNER": "DevSecOps Engine Tools",
+    "SECRET_MANAGER": {
+        "AWS": {
+            "SECRET_NAME": "",
+            "USE_ROLE": false,
+            "ROLE_ARN": "",
+            "REGION_NAME": ""
+        }
+    },
+    "VULNERABILITY_MANAGER": {
+        "BRANCH_FILTER": [
+            "trunk",
+            "main",
+            "feature"
+        ],
+        "DEFECT_DOJO": {
+            "HOST_DEFECT_DOJO": "",
+            "LIMITS_QUERY": 100,
+            "MAX_RETRIES_QUERY": 5,
+            "CMDB": {
+                "USE_CMDB": false,
+                "HOST_CMDB": "",
+                "REGEX_EXPRESSION_CMDB": "",
+                "CMDB_MAPPING_PATH": "",
+                "CMDB_MAPPING": {
+                    "PRODUCT_TYPE_NAME": "",
+                    "PRODUCT_NAME": "",
+                    "TAG_PRODUCT": "",
+                    "PRODUCT_DESCRIPTION": "",
+                    "CODIGO_APP": ""
+                },
+                "CMDB_REQUEST_RESPONSE": {
+                    "HEADERS": {
+                        "Content-Type": "application/json",
+                        "Api-Key": "tokenvalue"
+                    },
+                    "METHOD": "GET|POST",
+                    "PARAMS": {
+                        "appCode": "codappvalue"
+                    },
+                    "BODY": {
+                        "appCode": "codappvalue"
+                    },
+                    "RESPONSE": [0]
+                }
+            }
+        }
+    },
+    "METRICS_MANAGER": {
+        "AWS": {
+            "BUCKET": "",
+            "USE_ROLE": false,
+            "ROLE_ARN": "",
+            "REGION_NAME": ""
+        }
+    },
+    "SBOM_MANAGER": {
+        "ENABLED": false,
+        "BRANCH_FILTER": [
+            "trunk",
+            "main"
+        ],
+        "SYFT": {
+            "SYFT_VERSION": "1.17.0",
+            "OUTPUT_FORMAT": "cyclonedx-json"
+        }
+    },
+    "ENGINE_IAC": {
+        "ENABLED": true,
+        "TOOL": "CHECKOV|KUBESCAPE|KICS"
+    },
+    "ENGINE_CONTAINER": {
+        "ENABLED": true,
+        "TOOL": "PRISMA|TRIVY"
+    },
+    "ENGINE_DAST": {
+        "ENABLED": true,
+        "TOOL": "NUCLEI"
+    },
+    "ENGINE_SECRET": {
+        "ENABLED": true,
+        "TOOL": "TRUFFLEHOG|GITLEAKS"
+    },
+    "ENGINE_DEPENDENCIES": {
+        "ENABLED": true,
+        "TOOL": "XRAY|DEPENDENCY_CHECK"
+    },
+    "ENGINE_CODE": {
+        "ENABLED": true,
+        "TOOL": "BEARER"
+    },
+    "REPORT_SONAR": {
+        "ENABLED": true
+    }
+}
