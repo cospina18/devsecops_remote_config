@@ -11,8 +11,7 @@
     "VULNERABILITY_MANAGER": {
         "BRANCH_FILTER": [
             "trunk",
-            "main",
-            "feature"
+            "main"
         ],
         "DEFECT_DOJO": {
             "HOST_DEFECT_DOJO": "",
