@@ -1,6 +1,9 @@
 {
     "SEARCH_PATTERN": [
-        "ms_"
+        "ms_",
+        "docker",
+        "k8s",
+        "finance"
     ],
     "IGNORE_SEARCH_PATTERN": "(.*_test)",
     "MESSAGE_INFO_ENGINE_IAC": "message custom",
